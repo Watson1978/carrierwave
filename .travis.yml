@@ -2,8 +2,6 @@ dist: trusty
 
 language: ruby
 
-cache: bundler
-
 rvm:
   - 2.5.7
   - 2.6.5
@@ -48,11 +46,6 @@ matrix:
     - rvm: jruby-head
     - gemfile: gemfiles/rails-master.gemfile
   fast_finish: true
-
-notifications:
-  email: false
-  slack:
-    secure: Npzanyv/LXLIRlrNs8iTUbZNRhXlP+K2ZpjZoS2UKkr09jYyP1qdf5a//R3Lu7Yat7g2b4qTJGbaZBEMUQSVaJ6UX6quiBJjVWxjxjQ4Ugk8k/yOIAcGEGYPfS6YzRXemRwo9j4uy76cmwlv8cwEuYTSTBRK4XrdYHslX6pKSXM=
 
 addons:
   postgresql: "9.6"
